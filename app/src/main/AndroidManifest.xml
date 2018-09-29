@@ -22,9 +22,10 @@
         </activity>
 
         <activity android:name=".alarm.activity.AlarmControllerActivity" />
-        <activity android:name=".toast.customtoast.TestToastActivity" />
-        <activity android:name=".toast.rocket.TestSmokeActivity" />
+        <activity android:name=".general.AutoEditTextActivity" />
         <activity android:name=".toast.rocket.SmokeActivity" />
+        <activity android:name=".toast.rocket.TestSmokeActivity" />
+        <activity android:name=".toast.customtoast.TestToastActivity" />
 
         <receiver android:name=".alarm.receiver.OneShotAlarm" />
         <receiver android:name=".alarm.receiver.RepeatingAlarm" />

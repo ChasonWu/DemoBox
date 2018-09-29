@@ -18,10 +18,10 @@ import org.chason.demobox.R;
 public class AutoEditTextActivity extends Activity implements TextWatcher {
 	private static final String TAG = "tag";
 	
-	private EditText mInputContent;
-	private TextView mShowContent;
-	private TextView mCountTip1;
-	private TextView mCountTip2;
+	private EditText mEtInputContent;
+	private TextView mTvShowContent;
+	private TextView mTvCountTip1;
+	private TextView mTvCountTip2;
 	
 	private int mMaxLength = 255;
 	private int mCount = 0;
@@ -33,23 +33,17 @@ public class AutoEditTextActivity extends Activity implements TextWatcher {
 		setListener();
 	}
 
-	/**
-	 * 初始化控件
-	 */
 	private void initView() {
 		setContentView(R.layout.activity_autoedittext);
-		mInputContent = findViewById(R.id.et_main_auto);
-		mShowContent = findViewById(R.id.tv_main_show_content);
-		mCountTip1 = findViewById(R.id.tv_main_count_tip1);
-		mCountTip2 = findViewById(R.id.tv_main_count_tip2);
+		mEtInputContent = findViewById(R.id.et_main_auto);
+		mTvShowContent = findViewById(R.id.tv_main_show_content);
+		mTvCountTip1 = findViewById(R.id.tv_main_count_tip1);
+		mTvCountTip2 = findViewById(R.id.tv_main_count_tip2);
 	}
 
-	/**
-	 * 给控件设置监听器
-	 */
 	private void setListener() {
 		// 给EditText添加Listener:addTextChangedListener
-		mInputContent.addTextChangedListener(this);
+		mEtInputContent.addTextChangedListener(this);
 	}
 
 	@Override
@@ -78,11 +72,11 @@ public class AutoEditTextActivity extends Activity implements TextWatcher {
 		Log.d(TAG, "onTextChanged:count---"+count);
 		
 		mCount = mCount - before + count;
-		mCountTip1.setText("已经输入了" + (mCount) + "个字");
-		mCountTip2.setText("还可以输入" + (mMaxLength - mCount) + "个字");
-		mShowContent.setText(s);
+		mTvCountTip1.setText("已经输入了" + (mCount) + "个字");
+		mTvCountTip2.setText("还可以输入" + (mMaxLength - mCount) + "个字");
+		mTvShowContent.setText(s);
 		if (mCount == mMaxLength) {
-			mShowContent.setTextColor(Color.RED);
+			mTvShowContent.setTextColor(Color.RED);
 		}
 	}
 

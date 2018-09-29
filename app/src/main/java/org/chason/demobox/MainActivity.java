@@ -10,6 +10,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import org.chason.demobox.alarm.activity.AlarmControllerActivity;
+import org.chason.demobox.general.AutoEditTextActivity;
 import org.chason.demobox.general.adapter.CommonAdapter;
 import org.chason.demobox.general.adapter.ViewHolder;
 import org.chason.demobox.general.base.BaseActivity;
@@ -37,7 +38,7 @@ public class MainActivity extends BaseActivity implements AdapterView.OnItemClic
         mItemName.add("1-自定义Toast");
         mItemName.add("2-火箭");
         mItemName.add("3-闹钟");
-        mItemName.add("Item4");
+        mItemName.add("4-监听EditText内容变化");
         mItemName.add("Item5");
 
         mGridItemAdapter = new CommonAdapter(this, mItemName, R.layout.item_main_gl) {
@@ -53,8 +54,8 @@ public class MainActivity extends BaseActivity implements AdapterView.OnItemClic
     }
 
     public void launchActivity(Context context, Class clazz) {
-        Intent intent = new Intent();
-        intent.setClass(context, clazz);
+        Intent intent = new Intent(context, clazz);
+//        intent.setClass(context, clazz);
         startActivity(intent);
     }
 
@@ -73,11 +74,11 @@ public class MainActivity extends BaseActivity implements AdapterView.OnItemClic
                 launchActivity(this, AlarmControllerActivity.class);
                 break;
 
-            case 3:
-                Toast.makeText(this, "3", Toast.LENGTH_SHORT).show();
+            case 3: //监听EditText内容变化
+                launchActivity(this, AutoEditTextActivity.class);
                 break;
 
-            case 4:
+            case 4: //
                 Toast.makeText(this, "4", Toast.LENGTH_SHORT).show();
                 break;
 
