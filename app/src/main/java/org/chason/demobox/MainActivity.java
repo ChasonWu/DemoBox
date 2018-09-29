@@ -9,11 +9,14 @@ import android.widget.GridView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import org.chason.demobox.Animation.TestAnimationActivity;
 import org.chason.demobox.alarm.activity.AlarmControllerActivity;
 import org.chason.demobox.general.AutoEditTextActivity;
 import org.chason.demobox.general.adapter.CommonAdapter;
 import org.chason.demobox.general.adapter.ViewHolder;
 import org.chason.demobox.general.base.BaseActivity;
+import org.chason.demobox.menu.customizemenu.TestCustomizeMenuActivity;
+import org.chason.demobox.menu.youkumenu.TestYouKuMenuActivity;
 import org.chason.demobox.toast.customtoast.TestToastActivity;
 import org.chason.demobox.toast.rocket.TestSmokeActivity;
 
@@ -39,7 +42,9 @@ public class MainActivity extends BaseActivity implements AdapterView.OnItemClic
         mItemName.add("2-火箭");
         mItemName.add("3-闹钟");
         mItemName.add("4-监听EditText内容变化");
-        mItemName.add("Item5");
+        mItemName.add("5-动画");
+        mItemName.add("6-优酷菜单");
+        mItemName.add("7-自定义菜单");
 
         mGridItemAdapter = new CommonAdapter(this, mItemName, R.layout.item_main_gl) {
             @Override
@@ -78,8 +83,20 @@ public class MainActivity extends BaseActivity implements AdapterView.OnItemClic
                 launchActivity(this, AutoEditTextActivity.class);
                 break;
 
-            case 4: //
-                Toast.makeText(this, "4", Toast.LENGTH_SHORT).show();
+            case 4: //动画
+                launchActivity(this, TestAnimationActivity.class);
+                break;
+
+            case 5: //优酷菜单
+                launchActivity(this, TestYouKuMenuActivity.class);
+                break;
+
+            case 6: //自定义菜单
+                launchActivity(this, TestCustomizeMenuActivity.class);
+                break;
+
+            case 7: //
+                Toast.makeText(this, "7", Toast.LENGTH_SHORT).show();
                 break;
 
             default:break;

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- 外层菜单 -->
+    <RelativeLayout
+        android:id="@+id/rl_youkumenu_level3"
+        android:layout_width="280dip"
+        android:layout_height="140dip"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/level3">
+
+        <ImageView
+            android:id="@+id/channel1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="5dip"
+            android:src="@drawable/channel1"/>
+        <ImageView
+            android:id="@+id/channel2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="45dip"
+            android:layout_marginLeft="25dip"
+            android:src="@drawable/channel2"/>
+        <ImageView
+            android:id="@+id/channel3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="80dip"
+            android:layout_marginLeft="60dip"
+            android:src="@drawable/channel3"/>
+        <ImageView
+            android:id="@+id/channel4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/channel4"/>
+        <ImageView
+            android:id="@+id/channel5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="80dip"
+            android:layout_marginRight="60dip"
+            android:src="@drawable/channel5"/>
+        <ImageView
+            android:id="@+id/channel6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="40dip"
+            android:layout_marginRight="20dip"
+            android:src="@drawable/channel6"/>
+        <ImageView
+            android:id="@+id/channel7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dip"
+            android:src="@drawable/channel7"/>
+
+    </RelativeLayout>
+
+
+    <!-- 中层菜单 -->
+    <RelativeLayout
+        android:id="@+id/rl_youkumenu_level2"
+        android:layout_width="180dip"
+        android:layout_height="90dip"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/level2">
+
+        <ImageView
+            android:id="@+id/myyouku"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:src="@drawable/icon_myyouku"/>
+        <ImageView
+            android:id="@+id/search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/icon_search"/>
+        <ImageView
+            android:id="@+id/menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/icon_menu"/>
+
+    </RelativeLayout>
+
+
+    <!-- 内层菜单 -->
+    <RelativeLayout
+        android:id="@+id/rl_youkumenu_level1"
+        android:layout_width="100dip"
+        android:layout_height="50dip"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/level1">
+
+        <ImageView
+            android:id="@+id/home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/icon_home"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

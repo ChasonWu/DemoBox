@@ -3,7 +3,7 @@
     package="org.chason.demobox">
 
     <uses-permission
-        android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
+        android:name="android.permission.KILL_BACKGROUND_PROCESSES"/>
 
     <application
         android:allowBackup="true"
@@ -15,23 +15,25 @@
 
         <activity android:name=".MainActivity">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.MAIN"/>
 
-                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
 
-        <activity android:name=".alarm.activity.AlarmControllerActivity" />
-        <activity android:name=".general.AutoEditTextActivity" />
-        <activity android:name=".toast.rocket.SmokeActivity" />
-        <activity android:name=".Animation.TestAnimationActivity" />
-        <activity android:name=".toast.rocket.TestSmokeActivity" />
-        <activity android:name=".toast.customtoast.TestToastActivity" />
+        <activity android:name=".alarm.activity.AlarmControllerActivity"/>
+        <activity android:name=".general.AutoEditTextActivity"/>
+        <activity android:name=".toast.rocket.SmokeActivity"/>
+        <activity android:name=".Animation.TestAnimationActivity"/>
+        <activity android:name=".toast.rocket.TestSmokeActivity"/>
+        <activity android:name=".toast.customtoast.TestToastActivity"/>
+        <activity android:name=".menu.customizemenu.TestCustomizeMenuActivity"/>
+        <activity android:name=".menu.youkumenu.TestYouKuMenuActivity"/>
 
-        <receiver android:name=".alarm.receiver.OneShotAlarm" />
-        <receiver android:name=".alarm.receiver.RepeatingAlarm" />
+        <receiver android:name=".alarm.receiver.OneShotAlarm"/>
+        <receiver android:name=".alarm.receiver.RepeatingAlarm"/>
 
-        <service android:name=".toast.rocket.RocketService" />
+        <service android:name=".toast.rocket.RocketService"/>
 
 
     </application>
