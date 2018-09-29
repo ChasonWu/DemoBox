@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="alpha">#00000000</color>
+    <color name="normal_orange_color">#fc78b1</color>
+    <color name="normal_bg_color">#E0DFE0</color>
+    <color name="gray">#E0E0E0</color>
+    <color name="dark_grey">#9a9a9a</color>
+    <color name="light_gray">#F0F0F0</color>
+     <color name="Light_red">#ffebf4</color>
+    <color name="green">#51ccd4</color>
+    <color name="pink">#fc78b1</color>
+     <color name="blue">#51ccd4</color>
+    <color name="fontcolor">#767676</color>
+     <color name="top_bg">#F2F2F2</color>
+    <color name="card_background">#ffffff</color>
+    <color name="card_shadow">#10000000</color>
+    <color name="lite_blue">#ff359ff2</color>
+    <color name="holo_blue">#FF33E5B5</color>
+     <color name="top_backgroud">#fdfaf7</color>
+     <color name="default_menu_back">#f1f1f1</color>
+    <color name="default_menu_press_back">#fafafa</color>
+    <color name="default_menu_press_text">#000000</color>
+    <color name="default_menu_text">#00cf9b</color>
+    <color name="divider">#f1f1f1</color>
+    <color name="red_orange">#F93F25</color>
+    <color name="colorPrimaryDark">#D02090</color>
+    <color name="ripple_material_dark">#4dffffff</color>
+
+    <color name="Gray">#e6e6e6</color>
+    <color name="dialogColor">#f0ffffff</color>
+    <color name="dialogTxtColor">#0048fc</color>
+
+    <!-- sharp背景渐变搭配 -->
+    <color name="MyGray">#d5d5d5</color>
+    <color name="Mywhite_gray">#DDDDDD</color>
+
+    //微付通
+    <drawable name="color_on">#000000</drawable>
+    <drawable name="color_off">#1270bf</drawable>
+
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="result_view">#b0000000</color>
+    <color name="viewfinder_frame">#ff88ae00</color>
+    <color name="possible_result_points">#c0ffff00</color>
+    <color name="transparent">#00000000</color>
+    <!-- 背景色 -->
+    <color name="bg_color">#eae9e9</color>
+    <color name="tv_color_stream">#888888</color>
+    <color name="red">#EE1111</color>
+    <color name="white_gray">#EEEEEE</color>
+    <color name="white">#FFFFFFFF</color>
+    <!-- 支付成功 -->
+    <color name="oreder_success">#85B200</color>
+    <color name="black">#000000</color>
+    <!--添加修改左边-->
+    <color name="item_left_color">#888888</color>
+
+    <color name="citem_tx_color">#eae8e9</color>
+
+    <color name="tx_color">#888888</color>
+
+    <color name="setting_tx_color">#333333</color>
+
+    <color name="bg_setting_right_text">#a3a3a3</color>
+
+    <color name="color1">#ff0f9d58</color>
+    <color name="color2">#ffdb4437</color>
+    <color name="color3">#ff4285f4</color>
+    <color name="color4">#fff4b400</color>
+
+    <color name="rc_text_color_secondary_inverse">@android:color/white</color>
+    <color name="rc_text_color_select_btn_disable">#97d9b3</color>
+
+
+    <!--actionbar-->
+    <color name="de_actionbar_bg">#0195ff</color>
+    <!---->
+    <color name="de_item_select">#f3f3f3</color>
+    <color name="de_action_color">#3498DB</color>
+    <color name="de_action_white">@android:color/white</color>
+    <color name="de_transparent">#00000000</color>
+
+    <color name="de_draft_color">#cb120f</color>
+
+    <color name="style_red">#ff4c41</color>
+    <color name="style_divider_color">#C9C7CD</color>
+
+    <!-- -->
+    <color name="black_textview">#575757</color>
+    <color name="group_list_black_textview">#353535</color>
+    <color name="group_list_gray">#999999</color>
+    <color name="group_list_liner">#e4e4e4</color>
+    <color name="main_title_backgroud">#F2F2F2</color>
+    <color name="main_regist">#ffffff</color>
+    <color name="main_backgroud_search">#f7f7f7</color>
+    <color name="button_backgroud">#0195ff</color>
+
+</resources>

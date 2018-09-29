@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">DemoBox</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="pointMessage">提示信息</string>
+    <string name="cancel">取消</string>
+    <string name="confirm">确定</string>
+</resources>

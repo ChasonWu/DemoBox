@@ -1,0 +1,26 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/btn_alarmcontroler_oneshot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="一次性闹钟" />
+    
+    <Button
+        android:id="@+id/btn_alarmcontroler_repeating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="重复闹钟" />
+    
+    <Button
+        android:id="@+id/btn_alarmcontroler_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="取消闹钟" />
+
+</LinearLayout>
