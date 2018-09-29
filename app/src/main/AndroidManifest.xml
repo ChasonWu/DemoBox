@@ -24,6 +24,7 @@
         <activity android:name=".alarm.activity.AlarmControllerActivity" />
         <activity android:name=".general.AutoEditTextActivity" />
         <activity android:name=".toast.rocket.SmokeActivity" />
+        <activity android:name=".Animation.TestAnimationActivity" />
         <activity android:name=".toast.rocket.TestSmokeActivity" />
         <activity android:name=".toast.customtoast.TestToastActivity" />
 
@@ -34,5 +35,5 @@
 
 
     </application>
-
 </manifest>
+
