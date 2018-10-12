@@ -36,7 +36,7 @@ public class ToastCustom implements OnTouchListener {
 		mParams.format = PixelFormat.TRANSLUCENT;
 		mParams.type = WindowManager.LayoutParams.TYPE_TOAST;
 	}
-	
+
 	public void show(String text) {
 		if (mView != null) {
 			hide();
@@ -45,7 +45,6 @@ public class ToastCustom implements OnTouchListener {
 		mView = View.inflate(mContext, R.layout.toast_custom_layout, null);
 		TextView tv = mView.findViewById(R.id.tv_toast_msg);
 		tv.setText(text);
-		
 		
 		mView.setOnTouchListener(this);
 		
@@ -92,8 +91,7 @@ public class ToastCustom implements OnTouchListener {
 		case MotionEvent.ACTION_UP:
 			break;
 
-		default:
-			break;
+		default:break;
 		}
 
 		return true;

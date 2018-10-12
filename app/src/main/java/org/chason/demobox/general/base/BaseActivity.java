@@ -3,8 +3,6 @@ package org.chason.demobox.general.base;
 import android.app.Activity;
 import android.content.pm.ActivityInfo;
 import android.os.Bundle;
-import android.view.View;
-import android.view.View.OnClickListener;
 import android.view.Window;
 
 import org.chason.demobox.general.utils.AppManager;
@@ -14,8 +12,7 @@ import org.chason.demobox.general.utils.AppManager;
  * @author Chason Wu
  */
 public abstract class BaseActivity extends Activity {
-	private static final String TAG = "BaseActivity";
-	
+
     /**
      * 是否全屏，默认值是true全屏
      */
@@ -24,7 +21,8 @@ public abstract class BaseActivity extends Activity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-//		Logger.d(TAG, this.getClass() + "-----onCreate ");
+//        LogUtil.getMethodPlace(new Throwable().getStackTrace());
+//        LogUtil.print(LogUtil.LEVEL_E, "BaseActivity onCreate的调用位置："+LogUtil.className+"--"+LogUtil.methodName+"--"+LogUtil.lineNumber);
 
 		// 竖屏锁定
 		setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
@@ -43,7 +41,6 @@ public abstract class BaseActivity extends Activity {
     @Override
     protected void onDestroy() {
         super.onDestroy();
-//        Logger.d(TAG, this.getClass() + "-----onDestroy ");
         AppManager.getInstance().finishActivity(this);
     }
     
