@@ -9,7 +9,7 @@
         android:layout_height="wrap_content"
         android:text="优酷菜单"/>
 
-    <org.chason.demobox.menu.youkumenu.YoukuMenu
+    <org.demobox.menu.youkumenu.YoukuMenu
         android:id="@+id/youkumenu_main"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />

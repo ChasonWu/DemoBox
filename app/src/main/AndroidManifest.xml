@@ -13,7 +13,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
-        <activity android:name=".MainActivity">
+        <activity android:name="org.demobox.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
@@ -21,19 +21,19 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".alarm.activity.AlarmControllerActivity"/>
-        <activity android:name=".general.AutoEditTextActivity"/>
-        <activity android:name=".toast.rocket.SmokeActivity"/>
-        <activity android:name=".Animation.TestAnimationActivity"/>
-        <activity android:name=".toast.rocket.TestSmokeActivity"/>
-        <activity android:name=".toast.customtoast.TestToastActivity"/>
-        <activity android:name=".menu.customizemenu.TestCustomizeMenuActivity"/>
-        <activity android:name=".menu.youkumenu.TestYouKuMenuActivity"/>
+        <activity android:name="org.demobox.alarm.activity.AlarmControllerActivity"/>
+        <activity android:name="org.demobox.general.AutoEditTextActivity"/>
+        <activity android:name="org.demobox.toast.rocket.SmokeActivity"/>
+        <activity android:name="org.demobox.Animation.TestAnimationActivity"/>
+        <activity android:name="org.demobox.toast.rocket.TestSmokeActivity"/>
+        <activity android:name="org.demobox.toast.customtoast.TestToastActivity"/>
+        <activity android:name="org.demobox.menu.customizemenu.TestCustomizeMenuActivity"/>
+        <activity android:name="org.demobox.menu.youkumenu.TestYouKuMenuActivity"/>
 
-        <receiver android:name=".alarm.receiver.OneShotAlarm"/>
-        <receiver android:name=".alarm.receiver.RepeatingAlarm"/>
+        <receiver android:name="org.demobox.alarm.receiver.OneShotAlarm"/>
+        <receiver android:name="org.demobox.alarm.receiver.RepeatingAlarm"/>
 
-        <service android:name=".toast.rocket.RocketService"/>
+        <service android:name="org.demobox.toast.rocket.RocketService"/>
 
 
     </application>

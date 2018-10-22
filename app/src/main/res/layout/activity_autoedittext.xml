@@ -27,6 +27,6 @@
         android:id="@+id/tv_main_count_tip2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="还可以输入256个字" />
+        android:text="还可以输入255个字" />
     
 </LinearLayout>
